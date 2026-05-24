@@ -46,10 +46,10 @@ Project ini dibuat sebagai Final Project Java Programming.
 
 ---
 
-# 🛠️ Teknologi yang Digunakan
+# 🛠️ Tools yang Digunakan
 
 - Java
 - Java Swing
-- MySQL
+- MySQL (Nama DB: library_db)
 - JDBC
 - Visual Studio Code
