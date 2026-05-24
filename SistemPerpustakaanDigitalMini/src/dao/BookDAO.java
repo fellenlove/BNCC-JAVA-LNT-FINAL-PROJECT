@@ -15,9 +15,8 @@ public class BookDAO {
         connection = DatabaseConnection.getConnection();
     }
 
-    // =========================
+
     // CREATE - TAMBAH BUKU
-    // =========================
     public boolean addBook(Book book) {
         String query = "INSERT INTO books (title, author, stock) VALUES (?, ?, ?)";
 
@@ -35,9 +34,8 @@ public class BookDAO {
         }
     }
 
-    // =========================
+
     // READ - AMBIL SEMUA BUKU
-    // =========================
     public List<Book> getAllBooks() {
         List<Book> books = new ArrayList<>();
 
@@ -62,9 +60,8 @@ public class BookDAO {
         return books;
     }
 
-    // =========================
+ 
     // UPDATE BUKU
-    // =========================
     public boolean updateBook(Book book) {
         String query = "UPDATE books SET title = ?, author = ?, stock = ? WHERE id = ?";
 
@@ -83,9 +80,8 @@ public class BookDAO {
         }
     }
 
-    // =========================
+
     // DELETE BUKU
-    // =========================
     public boolean deleteBook(int id) {
         String query = "DELETE FROM books WHERE id = ?";
 
@@ -101,9 +97,8 @@ public class BookDAO {
         }
     }
 
-    // =========================
+
     // SEARCH BUKU BY ID
-    // =========================
     public Book getBookById(int id) {
         String query = "SELECT * FROM books WHERE id = ?";
 

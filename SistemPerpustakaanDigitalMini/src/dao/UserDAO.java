@@ -16,9 +16,8 @@ public class UserDAO {
         connection = DatabaseConnection.getConnection();
     }
 
-    // =========================
+
     // REGISTER USER
-    // =========================
     public boolean register(User user) {
         String query = "INSERT INTO users (username, password) VALUES (?, ?)";
 
@@ -37,9 +36,8 @@ public class UserDAO {
         }
     }
 
-    // =========================
+
     // LOGIN USER
-    // =========================
     public User login(String username, String password) {
         String query = "SELECT * FROM users WHERE username = ? AND password = ?";
 
@@ -65,10 +63,8 @@ public class UserDAO {
         return null;
     }
 
-    // =========================
+
     // CEK USERNAME DUPLIKAT
-    // (biar ga double user)
-    // =========================
     public boolean isUsernameExists(String username) {
         String query = "SELECT id FROM users WHERE username = ?";
 

@@ -15,9 +15,8 @@ public class LoanDAO {
         connection = DatabaseConnection.getConnection();
     }
 
-    // =========================
+
     // PINJAM BUKU
-    // =========================
     public boolean borrowBook(int userId, int bookId, Date loanDate) {
 
         String insertLoan = "INSERT INTO loans (user_id, book_id, loan_date, status) VALUES (?, ?, ?, 'BORROWED')";
@@ -50,9 +49,8 @@ public class LoanDAO {
         }
     }
 
-    // =========================
+
     // RETURN BUKU
-    // =========================
     public boolean returnBook(int loanId, int bookId) {
 
         String updateLoan = "UPDATE loans SET status = 'RETURNED', return_date = CURDATE() WHERE id = ?";
@@ -77,9 +75,8 @@ public class LoanDAO {
         }
     }
 
-    // =========================
+
     // HISTORY PEMINJAMAN (ALL)
-    // =========================
     public List<Loan> getAllLoans() {
         List<Loan> loans = new ArrayList<>();
 
@@ -106,9 +103,8 @@ public class LoanDAO {
         return loans;
     }
 
-    // =========================
+
     // HISTORY BY USER
-    // =========================
     public List<Loan> getLoansByUser(int userId) {
         List<Loan> loans = new ArrayList<>();
 
