@@ -1,7 +1,6 @@
 # 📚 Sistem Perpustakaan Digital Mini
 
-Sistem Perpustakaan Digital Mini adalah aplikasi desktop berbasis Java yang dibuat untuk membantu proses pengelolaan perpustakaan sekolah secara sederhana dan efisien.  
-Aplikasi ini mendukung fitur login user, CRUD buku, peminjaman dan pengembalian buku, serta history peminjaman menggunakan GUI Java Swing dan database MySQL.
+Sistem Perpustakaan Digital Mini adalah aplikasi desktop berbasis Java yang dibuat untuk membantu proses pengelolaan perpustakaan sekolah secara sederhana dan efisien. Aplikasi ini mendukung fitur login user, CRUD buku, peminjaman dan pengembalian buku, serta history peminjaman menggunakan GUI Java Swing dan database MySQL.
 
 Project ini dibuat sebagai Final Project Java Programming.
 
