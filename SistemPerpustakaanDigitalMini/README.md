@@ -1,18 +1,94 @@
-## Getting Started
+# 📚 Sistem Perpustakaan Digital Mini
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Sistem Perpustakaan Digital Mini adalah aplikasi desktop berbasis Java yang dibuat untuk membantu proses pengelolaan perpustakaan sekolah secara sederhana dan efisien. Aplikasi ini mendukung fitur login user, CRUD buku, peminjaman dan pengembalian buku, serta history peminjaman menggunakan GUI Java Swing dan database MySQL.
 
-## Folder Structure
+Project ini dibuat sebagai Final Project Java Programming.
 
-The workspace contains two folders by default, where:
+---
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+# 👥 Kelompok
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Tajir Melintir
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Anggota Kelompok
+1. Dewani Dellaenza
+2. Jildzian Christian
+3. I Gusti Gede Agung Angga
 
-## Dependency Management
+---
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+# 🚀 Fitur Utama
+
+## 👤 Authentication
+- Register User
+- Login User
+
+## 📚 Book Management
+- Tambah buku
+- Lihat daftar buku
+- Edit data buku
+- Hapus buku
+
+## 📖 Loan Management
+- Pinjam buku
+- Return buku
+- Update stock otomatis
+
+## 📜 Loan History
+- Melihat seluruh history peminjaman
+- Melihat history berdasarkan user login
+
+## 🖥️ GUI
+- Dashboard menu
+- JTable untuk menampilkan data
+- Popup dialog menggunakan JOptionPane
+
+---
+
+# 🛠️ Tools yang Digunakan
+
+- Java
+- Java Swing
+- MySQL (Nama DB: library_db)
+- JDBC
+- Visual Studio Code
+
+---
+
+# 🗂️ Struktur Folder
+
+```text
+SISTEMPERPUSTAKAANDIGITALMINI/
+│
+├── src/
+│   ├── config/
+│   │   └── DatabaseConnection.java
+│   │
+│   ├── model/
+│   │   ├── User.java
+│   │   ├── Book.java
+│   │   └── Loan.java
+│   │
+│   ├── dao/
+│   │   ├── UserDAO.java
+│   │   ├── BookDAO.java
+│   │   └── LoanDAO.java
+│   │
+│   ├── controller/
+│   │   ├── AuthController.java
+│   │   ├── BookController.java
+│   │   └── LoanController.java
+│   │
+│   ├── view/
+│   │   ├── LoginForm.java
+│   │   ├── Dashboard.java
+│   │   ├── BookForm.java
+│   │   ├── LoanForm.java
+│   │   └── HistoryForm.java
+│   │
+│   └── Main.java
+│
+├── lib/
+│   └── mysql-connector-j.jar
+│
+└── database.sql
